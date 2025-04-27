@@ -15,7 +15,7 @@
 
     .page {
       display: none;
-      padding: 60px 20px;
+      padding: 40px 20px;
     }
 
     .active {
@@ -71,9 +71,10 @@
     }
 
     .box {
-      margin: 100px auto;
-      padding: 40px;
-      width: fit-content;
+      margin: 40px auto 20px auto;
+      padding: 30px;
+      width: 80%;
+      max-width: 500px;
       border: 3px solid #004d40;
       border-radius: 15px;
       font-size: 1.2em;
@@ -108,20 +109,24 @@
       <button type="submit">Submit</button>
     </form>
   </div>
-<!-- Page 2 -->
-<div class="page" id="page2">
-  <div class="box" style="margin: 40px auto 20px auto; padding: 30px; font-size: 1em; width: 80%; max-width: 500px;">
-    "You know what? Just seeing you makes my whole day better.<br>
-    Your smile is honestly the most beautiful thing in the world.<br>
-    You're the most special person in my life.<br>
-    I just want to stay by your side—no reason needed."(M+T)
+
+  <!-- Page 2 -->
+  <div class="page" id="page2">
+    <div class="box">
+      "You know what? Just seeing you makes my whole day better.<br>
+      Your smile is honestly the most beautiful thing in the world.<br>
+      You're the most special person in my life.<br>
+      I just want to stay by your side—no reason needed."(M+T)
+    </div>
+
+    <!-- Ei line ta box-er niche image -->
+    <iframe
+      src="https://drive.google.com/file/d/12hYLEOfFJ-bn1EQt6PIZi47fflja4CZn/preview?usp=drivesdk"
+      style="margin-top: 20px; height: 250px; width: 200px; border-radius: 15px; box-shadow: 0 0 15px rgba(0,0,0,0.3);">
+    </iframe>
   </div>
 
-  <iframe
-    src="https://drive.google.com/file/d/12hYLEOfFJ-bn1EQt6PIZi47fflja4CZn/preview?usp=drivesdk"
-    style="margin-top: 20px; height:250px; width: 200px; border-radius: 15px; box-shadow: 0 0 15px rgba(0,0,0,0.3);">
-  </iframe>
-</div>
+  <script>
     const form = document.getElementById('howForm');
     const page1 = document.getElementById('page1');
     const page2 = document.getElementById('page2');
@@ -132,5 +137,6 @@
       page2.classList.add('active');
     });
   </script>
+
 </body>
 </html>
